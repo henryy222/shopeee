@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f1e3;
+        }
+        .header {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .search-bar {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 8px;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 8px;
+            border: none;
+            background-color: #ff5722;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #e64a19;
+        }
+        .container {
+            padding: 10px;
+        }
+        .promo-section {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .promo-section h2 {
+            color: #ff5722;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .promo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .promo-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 45%;
+            box-sizing: border-box;
+        }
+        .promo-item img {
+            width: 120px; /* Memperbesar ukuran gambar */
+            height: auto;
+        }
+        .promo-item h3 {
+            font-size: 14px;
+            color: #555;
+        }
+        .promo-item p {
+            font-size: 16px;
+            color: #ff5722;
+            font-weight: bold;
+        }
+        .voucher-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffebee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .voucher-item img {
+            width: 80px;
+            height: auto;
+        }
+        .voucher-item button {
+            background-color: #ff5722;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .voucher-item button:hover {
+            background-color: #e64a19;
+        }
+        /* Menghilangkan garis biru pada link */
+        a {
+            text-decoration: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Shopee</h1>
+    <div class="icon">
+        <!-- Gambar Inbox -->
+        <a href="https://shopee.co.id/cart"><img src="keranjang.jpg" alt="Inbox"></a> <!-- Ganti "inbox.png" dengan path gambar inbox yang sesuai -->
+        <!-- Gambar Keranjang -->
+        <a href="https://shopee.co.id/me"><img src="pesan.jpg" alt="Keranjang"></a> <!-- Ganti "cart.png" dengan path gambar keranjang yang sesuai -->
+    </div>
+</div>
+
+<!-- Pencarian Produk -->
+<div class="search-bar">
+    <form action="https://shopee.co.id/search" method="get" target="_blank">
+        <input type="text" name="keyword" placeholder="Cari produk...">
+        <button type="submit">Cari</button>
+    </form>
+</div>
+
+<div class="container">
+    <!-- Voucher Spesial -->
+    <div class="promo-section">
+        <h2>Voucher Spesial</h2>
+        <div class="voucher">
+            <div class="voucher-item">
+                <img src="gratisongkir.jpg" alt="Voucher Spesial"> <!-- Ganti "voucher-image.png" dengan path gambar voucher -->
+                <div>
+                    <p>Gratis Ongkir Rp0<br>Pengguna Baru<br>Berlaku 60Hari</p>
+                    <button onclick="klaimVoucher()">Klaim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Pasti Murah -->
+    <div class="promo-section">
+        <h2>Promo Pasti Murah</h2>
+        <div class="promo">
+            <!-- Produk 1 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/%E2%80%A2JEJU%E2%80%A2-GLAD2GLOW-NIACINAMIDE-MILK-AMINO-ACIDS-GENTLE-CLEANSER-POMEGRANATE-POWER-BRIGHT-SERUM-i.10001610.24757652682" target="_blank">
+                    <img src="produk1.jpg" alt="Earphone">
+                    <h3>Glad2Glow Pomegranat Niacinamide Brightening Moisturizer</h3>
+                    <p>Rp44.600</p>
+                </a>
+            </div>
+            <!-- Produk 2 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/430986274/8460232072?d_id=bffc1&uls_trackid=518nigce0145&utm_content=3CHsRJZktaosWyPcVmf6xnhReDKu" target="_blank">
+                    <img src="produk2.jpg" alt="Jam Tangan">
+                    <h3>SOOTHES & BALANCES</h3>
+                    <p>Rp156.702</p>
+                </a>
+            </div>
+            <!-- Produk 3 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/809769142/27408030377?d_id=bffc1&uls_trackid=518nj1oq006v&utm_content=3CHsRJZktaeNno3JMx2388Xj3kv3" target="_blank">
+                    <img src="produk3.jpg" alt="Laptop">
+                    <h3>GLAD2GLOW AHA BHA PHA INTENSIVE PEELING SOLUTION</h3>
+                    <p>Rp49.000</p>
+                </a>
+            </div>
+            <!-- Produk 4 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/63983008/18086168902?d_id=bffc1&uls_trackid=518nhj5u004m&utm_content=3CHsRJZktaSTxyTgPLAzrYyECWrB" target="_blank">
+                    <img src="produk4.jpg" alt="Smartphone">
+                    <h3>Clay Mask Brightening Masker clay berscrub</h3>
+                    <p>Rp40.500</p>
+                </a>
+            </div>
+            <!-- Produk 5 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/809769142/26109221813?d_id=bffc1&uls_trackid=518ni3av0018&utm_content=3CHsRJZktakTSzkoGnLBBGQC3dX5" target="_blank">
+                    <img src="produk5.jpg" alt="Glad2Glow Pomegranate Niacinamide Brightening">
+                    <h3>Glad2Glow Pomegranate Niacinamide Brightening</h3>
+                    <p>Rp200.500</p>
+                </a>
+            </div>
+            <!-- Produk 6 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/779266191/21795721649?d_id=bffc1&uls_trackid=518nen7a014o&utm_content=3CHsRJZktZ9RHgnE5Gb1ZyQwzjLb" target="_blank">
+                    <img src="produk6.jpg" alt="Powerbank">
+                    <h3>lavojoy Let It Glow Body Wash</h3>
+                    <p>Rp45.000</p>
+                </a>
+            </div>
+            <!-- Produk 7 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/932470899/19371406770?d_id=bffc1&uls_trackid=518nh0hh006v&utm_content=3CHsRJZktZaqRYCiiBEuMLDFz6B1" target="_blank">
+                    <img src="produk7.jpg" alt="Kamera">
+                    <h3>Vaseline Healthy 
+                  Bright Gluta-Hya Serum Burst Lotion</h3>
+                    <p>Rp52.000</p>
+                </a>
+            </div>
+            <!-- Produk 8 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/380266264/23760330853?d_id=bffc1&uls_trackid=518ngbmn001m&utm_content=3CHsRJZktZdzzvzA67nbJ69wmTZR" target="_blank">
+                    <img src="produk8.jpg" alt="Skintific Outdoor Sunscreen Spray SPF 50+ PA++++">
+                    <h3>Skintific Outdoor Sunscreen Spray SPF </h3>
+                    <p>Rp148.900</p>
+                </a>
+            </div>
+            <!-- Produk 9 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/380266264/28253797888?d_id=bffc1&uls_trackid=518nfbb4006f&utm_content=3CHsRJZktZCkXU8agaKXQYTJUxis" target="_blank">
+                    <img src="produk9.jpg" alt="[New Launch] SKINTIFIC - Acid Peeling Solution Serum 30ml | Eksfoliasi Essence Wajah">
+                    <h3>SKINTIFIC - Acid Peeling Solution </h3>
+                    <p>Rp127.700</p>
+                </a>
+            </div>
+            <!-- Produk 10 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/%28COD%29FACIAL-GARNIER-SABUN-WAJAH-GARNIER-50ml-i.277847219.10047792418" target="_blank">
+                    <img src="produk10.jpg" alt="Baju">
+                    <h3>FACIAL GARNIER SAKURA WHITE / SABUN WAJAH GARNIER PINK
+</h3>
+                    <p>Rp23.050</p>
+                </a>
+            </div>
+            <!-- Produk 10 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/1201810735/23789611274?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMmtzV1FSaDZGblQ2Z29BYWh1VmxDKy9yWlFDOU42TWo2WE9HRXVCRHNmWEtydmcxR00xdjR0azQxaG9adXdabzZ2a0N4TjhrbGRRNXB0Ym9yNDhoMWRrSmdRRFl0TlUwU1VPR0tlSFEyeWRRPT0" target="_blank">
+                    <img src="produk11.jpg" alt="Baju">
+                    <h3>Mainan Blok Kartun Mainan Partikel Blok 3D Hadiah Anak-Anak Blok Bangunan Seri Kartun Building
+
+</h3>
+                    <p>Rp6.899</p>
+                </a>
+        </div>
+            <!-- Produk 10 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/157797143/8323105230?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVzBLS2xuUGZzMlQ5NjlFWklmRkZjUzJhcmRsMThSTkd3M3VVeEJIVlhDYS80MHJBNlhlUTRZcmhwU0JZb0RyUGVZOHFZSmZ3NGF1T3FDblJmWTYrTFF6UXNsbmhNSzd2VHc1UG5odUp6amc" target="_blank">
+                    <img src="produk12.jpg" alt="Baju">
+                    <h3>MAINAN PRANK MAINAN BAJAK LAUT LONCAT BARREL PIRATE
+</h3>
+                    <p>Rp15.840</p>
+                </a>
+        </div>
+
+            <!-- Produk 10 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/33700168/1629468551?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEg0SDd3VWo1MDQyT052d3EvY1B4YUY2d2JvcXZZYXN0VHJVdDUxa0xyVERERG9KaldnZVhIRDBKQ1lYWWVhMmh2YWY2TmNQR2pCbW5qNjhKUUVQZ0xrK2J4TmIxZnFMbGg2cU9lT3UxbHg" target="_blank">
+                    <img src="produk13.jpg" alt="Baju">
+                    <h3>Perlengkapan Bayi Set Newborn isi 10/6 (Termometer. Gunting Kuku. Sisir Bayi. Dll) Baby Care Kit
+</h3>
+                    <p>Rp8.900</p>
+                </a>
+        </div>
+            <!-- Produk 10 -->
+            <div class="promo-item">
+                <a href="https://shopee.co.id/product/444813420/17797507528?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkWVp3RFo3Mkw5czd4Z0hzdEF1WVFibW5RWmJScHA5Vk55cVN6U2F3a2NLaC9xV1dxMVk4ZVlvSkkxd2s1ZG9QR1VMT2FIbWlvT0JhUzY3bEVBdWdHem1vNlBOWElubm1VNGpTZ3NVOVBhb0k" target="_blank">
+                    <img src="produk14.jpg" alt="Baju">
+                    <h3>Paket Baju Bayi Baru Lahir Lengkap Terkomplit komplit Seri Abu
+
+</h3>
+                    <p>Rp246.650</p>
+                </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function klaimVoucher() {
+        alert("Voucher berhasil diklaim!");
+    }
+</script>
+
+
